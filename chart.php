@@ -8,8 +8,8 @@ include("page.php");
         <title>Training Chart</title>
     </head>
     <body>
-        <div>
-            <img src="chart.php">
+        <div style="text-align: center;">
+            <img style="margin-top:150px; width:1200px" src="plot.png">
         </div>
     </body>
 </html>

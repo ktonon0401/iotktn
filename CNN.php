@@ -18,8 +18,8 @@ include("page.php");
         </script>
         <div>
             <?php
-            $pyout = exec('python training.py');
-            echo $pyout;
+            $out = exec('python training.py');
+            echo "<p>$out</p>";
             ?>
         </div>
 

@@ -20,5 +20,5 @@ def training_CNN():
   # hinhnao = labels[index]
   index = arr.tolist()
   out = labels[index[0]]
-  return str(out)
-  # print(training_CNN())
+  return out
+print(training_CNN())
