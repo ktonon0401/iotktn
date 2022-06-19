@@ -5,30 +5,24 @@ import numpy as np
 import pandas as pd
 import os
 
-dir_path = 'Data_VNbanknotes'
-path_img = []
+def training_CNN():
 
-listdir = os.listdir(dir_path)
-for i in range(len(listdir)):
-  listdir[i] = int(listdir[i])
-listdir.sort()
-for k in range(len(listdir)):
-  listdir[k] = str(listdir[k])
+  labels = ['1000','2000','5000','10000','20000','50000','100000','200000','500000']
 
-labels = listdir
-
-model_pre = load_model('money.h5')
+  model_pre = load_model('money.h5')
 
 
-img=load_img('/home/ktonon/Downloads/20k.jpg',target_size=(40,80))
-plt.imshow(img)
-img=img_to_array(img)
-img=img.reshape(1,40,80,3)
-img=img.astype('float32')
-img=img/255
-img.shape
+  img=load_img('/home/ktonon/Downloads/200k.jpg',target_size=(40,80))
+  plt.imshow(img)
+  img=img_to_array(img)
+  img=img.reshape(1,40,80,3)
+  img=img.astype('float32')
+  img=img/255
+  img.shape
 
-arr = np.argmax(model_pre.predict(img),axis=1)
-# hinhnao = labels[index]
-index = arr.tolist()
-print("Predict:",labels[index[0]],"VND")
+  arr = np.argmax(model_pre.predict(img),axis=1)
+  # hinhnao = labels[index]
+  index = arr.tolist()
+  out = labels[index[0]]
+  return out
+print(training_CNN())

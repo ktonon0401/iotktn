@@ -16,5 +16,12 @@ include("index.php");
                 image.src = URL.createObjectURL(event.target.files[0]);
             };
         </script>
+        <div>
+            <?php
+            $pyout = exec('python training.py');
+            echo $pyout;
+            ?>
+        </div>
+
     </body>
 </html>
