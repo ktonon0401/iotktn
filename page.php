@@ -35,7 +35,7 @@
                     </center>
 
                     <li class="item" id="profile">
-                        <a href="profile.html" class="menu-btn">
+                        <a href="profile.php" class="menu-btn">
                             <i class="fas fa-user-circle"></i><span>Profile </span>
                         </a>
                     </li>

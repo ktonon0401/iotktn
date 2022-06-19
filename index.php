@@ -53,7 +53,7 @@
                         </a>
                         <div class="sub-menu">
                             <a href="CNN.php"><i class="fas fa-envelope"></i><span>CNN</span></a>
-                            <a href="chart.html"><i class="fas fa-envelope-square"></i><span>Chart</span></a>
+                            <a href="chart.php"><i class="fas fa-envelope-square"></i><span>Chart</span></a>
 
                             <!-- <a href="#"><i class="fas fa-exclamation-circle"></i><span>Spam</span></a> -->
                         </div>

@@ -1,5 +1,5 @@
 <?php
-include("index.php");
+include("page.php");
 ?>
 <!DOCTYPE html>
 <html>
